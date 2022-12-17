@@ -1,0 +1,97 @@
+html {
+  box-sizing: border-box;
+  background: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:10px;
+  font-weight: 200;
+}
+
+header {
+  height:50vh;
+  background-size:cover;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+
+h1 {
+ color:rgb(17, 16, 18);
+ font-size:7vw;
+ text-shadow: 3px 4px 0 rgba(0,0,0,0.2)
+}
+
+nav {
+  background : black;
+  top:0;
+  width: 100%;
+  transition:all 0.5s;
+  position: relative;
+  z-index: 1;
+}
+
+.fixed-nav {
+  padding-top: 64px;
+}
+
+.fixed-nav nav {
+    position: fixed;
+    box-shadow: white;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display:flex;
+}
+
+nav li {
+  flex:1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li.logo {
+  max-width:0;
+  overflow: hidden;
+  background: white;
+  transition: all 0.5s;
+  font-weight: 600;
+  font-size: 50px;
+}
+
+.bodyText {
+    max-width: 500px;
+    margin: 50px auto;
+    text-align: justify;
+    background: white;
+}
+
+body.fix-nav nav{
+    position:fixed;
+    box-shadow: 0 5px 0 rgba(248, 242, 242, 0.501)
+}
+
+.fixed-nav li.logo {
+  max-width:500px;
+}
+li.logo a{
+  color:black;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+  color: white;
+  transition: all 0.9s;
+  text-transform: uppercase;
+}
+
+.photo{
+    display: block;  
+    width:1500px;
+    height:500px;
+}
